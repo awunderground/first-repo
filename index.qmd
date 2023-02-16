@@ -13,7 +13,7 @@ library(tidyverse)
 
 ```{r}
 storms %>%
-  ggplot(aes(x = wind, y = pressure)) +
+  ggplot(aes(x = wind, y = pressure, color = category)) +
   geom_point()
 
 
