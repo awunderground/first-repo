@@ -1,0 +1,20 @@
+---
+title: "QUARTO!"
+format: 
+  html:
+    self-contained: true
+---
+
+```{r}
+library(tidyverse)
+
+
+```
+
+```{r}
+storms %>%
+  ggplot(aes(x = wind, y = pressure)) +
+  geom_point()
+
+
+```
